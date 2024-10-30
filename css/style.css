@@ -51,4 +51,57 @@ html body .header .navbar a {
 html body .header .navbar a:hover,
 html body .header .navbar .active {
   color: #00abf0;
+}
+html body main section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+html body main section .home-content {
+  max-width: 60rem;
+}
+html body main section .home-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+html body main section .home-content .text-animate {
+  position: relative;
+  width: 32.8rem;
+}
+html body main section .home-content .text-animate h3 {
+  -webkit-text-stroke: 0.7px #00abf0;
+  color: transparent;
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+html body main section .home-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 4rem;
+}
+html body main section .home-content .btn-box {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  position: relative;
+  width: 34.5rem;
+}
+html body main section .home-content .btn-box .btn {
+  align-items: center;
+  background-color: #00abf0;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #00abf0;
+  color: #081b29;
+  display: inline-flex;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 100%;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+  position: relative;
+  width: 15rem;
+}
+html body main .home {
+  align-items: center;
+  display: flex;
+  padding: 0 9%;
 }/*# sourceMappingURL=style.css.map */
