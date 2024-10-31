@@ -66,15 +66,18 @@ html {
     }
 
     main {
-      section {
+      .home {
+        align-items: center;
+        display: flex;
         min-height: 100vh;
-        padding: 10rem 9% 2rem;
+        padding: 0 9%;
+        // padding: 10rem 9% 2rem;
 
         .home-content {
-          max-width: 60rem;
+          max-width: 70rem;
 
           h1 {
-            font-size: 5rem;
+            font-size: 4.5rem;
             font-weight: 700;
             line-height: 1.3;
           }
@@ -156,12 +159,51 @@ html {
             }
           }
         }
-      }
 
-      .home {
-        align-items: center;
-        display: flex;
-        padding: 0 9%;
+        .social-media {
+          bottom: 4rem;
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          width: 170px;
+
+          a {
+            align-items: center;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 0.2rem solid $main-color;
+            color: $main-color;
+            display: inline-flex;
+            font-size: 20px;
+            height: 40px;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            transition: 0.5s;
+            width: 40px;
+            z-index: 1;
+
+            &:hover {
+              color: $bg-color;
+            }
+
+            &::before {
+              background-color: $main-color;
+              content: "";
+              height: 100%;
+              left: 0;
+              position: absolute;
+              top: 0;
+              transition: 0.5s;
+              width: 0;
+              z-index: -1;
+            }
+
+            &:hover::before {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

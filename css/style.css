@@ -52,40 +52,42 @@ html body .header .navbar a:hover,
 html body .header .navbar .active {
   color: #00abf0;
 }
-html body main section {
+html body main .home {
+  align-items: center;
+  display: flex;
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 0 9%;
 }
-html body main section .home-content {
-  max-width: 60rem;
+html body main .home .home-content {
+  max-width: 70rem;
 }
-html body main section .home-content h1 {
-  font-size: 5rem;
+html body main .home .home-content h1 {
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.3;
 }
-html body main section .home-content .text-animate {
+html body main .home .home-content .text-animate {
   position: relative;
   width: 32.8rem;
 }
-html body main section .home-content .text-animate h3 {
+html body main .home .home-content .text-animate h3 {
   -webkit-text-stroke: 0.7px #00abf0;
   color: transparent;
   font-size: 3.1rem;
   font-weight: 700;
 }
-html body main section .home-content p {
+html body main .home .home-content p {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
 }
-html body main section .home-content .btn-box {
+html body main .home .home-content .btn-box {
   display: flex;
   height: 5rem;
   justify-content: space-between;
   position: relative;
   width: 34.5rem;
 }
-html body main section .home-content .btn-box .btn {
+html body main .home .home-content .btn-box .btn {
   align-items: center;
   background-color: #00abf0;
   border-radius: 0.8rem;
@@ -103,13 +105,13 @@ html body main section .home-content .btn-box .btn {
   transition: 0.5s;
   overflow: hidden;
 }
-html body main section .home-content .btn-box .btn:hover {
+html body main .home .home-content .btn-box .btn:hover {
   color: #00abf0;
 }
-html body main section .home-content .btn-box .btn:hover::before {
+html body main .home .home-content .btn-box .btn:hover::before {
   width: 100%;
 }
-html body main section .home-content .btn-box .btn::before {
+html body main .home .home-content .btn-box .btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -120,18 +122,53 @@ html body main section .home-content .btn-box .btn::before {
   z-index: -1;
   transition: 0.5s;
 }
-html body main section .home-content .btn-box .btn:nth-child(2) {
+html body main .home .home-content .btn-box .btn:nth-child(2) {
   background-color: transparent;
   color: #00abf0;
 }
-html body main section .home-content .btn-box .btn:nth-child(2):hover {
+html body main .home .home-content .btn-box .btn:nth-child(2):hover {
   color: #081b29;
 }
-html body main section .home-content .btn-box .btn:nth-child(2)::before {
+html body main .home .home-content .btn-box .btn:nth-child(2)::before {
   background-color: #00abf0;
 }
-html body main .home {
-  align-items: center;
+html body main .home .social-media {
+  bottom: 4rem;
   display: flex;
-  padding: 0 9%;
+  justify-content: space-between;
+  position: absolute;
+  width: 170px;
+}
+html body main .home .social-media a {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0.2rem solid #00abf0;
+  color: #00abf0;
+  display: inline-flex;
+  font-size: 20px;
+  height: 40px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  width: 40px;
+  z-index: 1;
+}
+html body main .home .social-media a:hover {
+  color: #081b29;
+}
+html body main .home .social-media a::before {
+  background-color: #00abf0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: -1;
+}
+html body main .home .social-media a:hover::before {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
