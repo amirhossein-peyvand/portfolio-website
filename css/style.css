@@ -174,31 +174,63 @@ html body main .home .social-media a:hover::before {
   width: 100%;
 }
 html body main .about {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #112e42;
+  display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-color: #112e42;
-  padding: 0 9%;
+  justify-content: center;
   padding-bottom: 6rem;
+  padding: 7rem 9%;
 }
 html body main .about .heading {
   font-size: 5rem;
   margin-bottom: 3rem;
   text-align: center;
 }
+html body main .about .heading span {
+  color: #00abf0;
+}
 html body main .about .about-img {
+  align-items: center;
+  border-radius: 50%;
+  height: 25rem;
+  justify-content: center;
   position: relative;
   width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
 }
 html body main .about .about-img img {
-  width: 100%;
-  margin: 0 auto;
   border-radius: 50%;
-  border: 3px solid #00abf0;
+  border: 0.4rem solid #00abf0;
+  width: 100%;
+}
+html body main .about .about-img .circle-spin {
+  border-bottom: 0.4rem solid #112e42;
+  border-left: 0.4rem solid #00abf0;
+  border-radius: 50%;
+  border-right: 0.4rem solid #00abf0;
+  border-top: 0.4rem solid #112e42;
+  height: 110%;
+  left: 50%;
+  position: absolute;
+  top: 48%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 110%;
+}
+html body main .about .about-content {
+  text-align: center;
+}
+html body main .about .about-content h3 {
+  font-size: 2.6rem;
+}
+html body main .about .about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+html body main .about .about-content .btns {
+  display: inline-block;
+  width: 15rem;
+}
+html body main .about .about-content .btns .btn::before {
+  background-color: #112e42;
 }/*# sourceMappingURL=style.css.map */
