@@ -407,5 +407,85 @@ html body main .skills .skills-row .skills-column:nth-child(2) .progress:nth-chi
   width: 55%;
 }
 html body main .contact {
-  padding: 7rem 9%;
+  min-height: auto;
+  padding: 5rem 9%;
+}
+html body main .contact form {
+  margin: 0 auto;
+  max-width: 70rem;
+  text-align: center;
+}
+html body main .contact form .input-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+html body main .contact form .input-box .input-field {
+  margin: 0.8rem 0;
+  overflow: hidden;
+  position: relative;
+  width: 49%;
+}
+html body main .contact form .input-box .input-field input {
+  background-color: transparent;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #00abf0;
+  color: #ededed;
+  font-size: 1.6rem;
+  height: 100%;
+  padding: 1.5rem;
+  width: 100%;
+}
+html body main .contact form .input-box .input-field input::-moz-placeholder {
+  color: #ededed;
+}
+html body main .contact form .input-box .input-field input::placeholder {
+  color: #ededed;
+}
+html body main .contact form .input-box .input-field input:focus ~ .focus,
+html body main .contact form .input-box .input-field input:focus ~ .valid {
+  width: 100%;
+}
+html body main .contact form .textarea-field {
+  display: flex;
+  margin: 0.8rem 0 2.7rem;
+  position: relative;
+}
+html body main .contact form .textarea-field textarea {
+  background-color: transparent;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #00abf0;
+  color: #ededed;
+  font-size: 1.6rem;
+  height: 100%;
+  padding: 1.5rem;
+  resize: none;
+  width: 100%;
+}
+html body main .contact form .textarea-field textarea::-moz-placeholder {
+  color: #ededed;
+}
+html body main .contact form .textarea-field textarea::placeholder {
+  color: #ededed;
+}
+html body main .contact form .textarea-field textarea:focus ~ .focus, html body main .contact form .textarea-field textarea:valid ~ .focus {
+  width: 100%;
+}
+html body main .contact form .btn-box {
+  width: 100%;
+}
+html body main .contact form .btn-box button {
+  cursor: pointer;
+  width: 100%;
+}
+html body main .contact form .focus {
+  background-color: #112e42;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

@@ -528,7 +528,93 @@ html {
       }
 
       .contact {
-        padding: 7rem 9%;
+        min-height: auto;
+        padding: 5rem 9%;
+
+        form {
+          margin: 0 auto;
+          max-width: 70rem;
+          text-align: center;
+
+          .input-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+
+            .input-field {
+              margin: 0.8rem 0;
+              overflow: hidden;
+              position: relative;
+              width: 49%;
+
+              input {
+                background-color: transparent;
+                border-radius: 0.6rem;
+                border: 0.2rem solid $main-color;
+                color: $text-color;
+                font-size: 1.6rem;
+                height: 100%;
+                padding: 1.5rem;
+                width: 100%;
+                &::placeholder {
+                  color: $text-color;
+                }
+              }
+
+              input:focus ~ .focus,
+              input:focus ~ .valid {
+                width: 100%;
+              }
+            }
+          }
+
+          .textarea-field {
+            display: flex;
+            margin: 0.8rem 0 2.7rem;
+            position: relative;
+
+            textarea {
+              background-color: transparent;
+              border-radius: 0.6rem;
+              border: 0.2rem solid $main-color;
+              color: $text-color;
+              font-size: 1.6rem;
+              height: 100%;
+              padding: 1.5rem;
+              resize: none;
+              width: 100%;
+
+              &::placeholder {
+                color: $text-color;
+              }
+
+              &:focus ~ .focus,
+              &:valid ~ .focus {
+                width: 100%;
+              }
+            }
+          }
+
+          .btn-box {
+            width: 100%;
+            button {
+              cursor: pointer;
+              width: 100%;
+            }
+          }
+
+          .focus {
+            background-color: $second-bg-color;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: 0.5s;
+            width: 0;
+            z-index: -1;
+          }
+        }
       }
     }
   }
