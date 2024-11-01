@@ -405,4 +405,7 @@ html body main .skills .skills-row .skills-column:nth-child(2) .progress:nth-chi
 }
 html body main .skills .skills-row .skills-column:nth-child(2) .progress:nth-child(4) .bar span {
   width: 55%;
+}
+html body main .contact {
+  padding: 7rem 9%;
 }/*# sourceMappingURL=style.css.map */
