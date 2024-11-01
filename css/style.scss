@@ -77,6 +77,16 @@ $text-color: #ededed;
   }
 }
 
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  span {
+    color: $main-color;
+  }
+}
+
 // main styles
 html {
   font-size: 62.5%;
@@ -86,7 +96,7 @@ html {
     background: $bg-color;
     color: $text-color;
 
-    .header {
+    header {
       align-items: center;
       background-color: transparent;
       display: flex;
@@ -219,16 +229,6 @@ html {
         padding-bottom: 6rem;
         padding: 7rem 9%;
 
-        .heading {
-          font-size: 5rem;
-          margin-bottom: 3rem;
-          text-align: center;
-
-          span {
-            color: $main-color;
-          }
-        }
-
         .about-img {
           align-items: center;
           border-radius: 50%;
@@ -277,6 +277,95 @@ html {
 
             .btn::before {
               background-color: $second-bg-color;
+            }
+          }
+        }
+      }
+
+      .education {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: auto;
+        padding: 7rem 9%;
+
+        .education-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5rem;
+
+          .education-column {
+            flex: 1 1 40rem;
+
+            .title {
+              font-size: 2.5rem;
+              margin: 0 0 1.5rem 2rem;
+            }
+
+            .education-box {
+              border-left: 0.2rem solid $main-color;
+
+              .education-content {
+                padding-left: 2rem;
+                position: relative;
+
+                &::before {
+                  background-color: $main-color;
+                  border-radius: 50%;
+                  content: "";
+                  height: 2rem;
+                  left: -1.1rem;
+                  position: absolute;
+                  top: 0;
+                  width: 2rem;
+                }
+
+                .content {
+                  border-radius: 0.6rem;
+                  border: 0.2rem solid $main-color;
+                  cursor: pointer;
+                  margin-bottom: 2rem;
+                  overflow: hidden;
+                  padding: 1.5rem;
+                  position: relative;
+
+                  &::before {
+                    background-color: $second-bg-color;
+                    content: "";
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: 0.5s;
+                    width: 0;
+                    z-index: -1;
+                  }
+
+                  &:hover::before {
+                    width: 100%;
+                  }
+
+                  .year {
+                    color: $main-color;
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
+
+                    i {
+                      padding-right: 0.5rem;
+                    }
+                  }
+
+                  h3 {
+                    font-size: 2rem;
+                  }
+
+                  p {
+                    font-size: 1.6rem;
+                    padding-top: 0.5rem;
+                  }
+                }
+              }
             }
           }
         }

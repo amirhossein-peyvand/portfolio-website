@@ -63,6 +63,15 @@
   background-color: #00abf0;
 }
 
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.heading span {
+  color: #00abf0;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -71,7 +80,7 @@ html body {
   background: #081b29;
   color: #ededed;
 }
-html body .header {
+html body header {
   align-items: center;
   background-color: transparent;
   display: flex;
@@ -83,26 +92,26 @@ html body .header {
   width: 100%;
   z-index: 100;
 }
-html body .header #menu-icon {
+html body header #menu-icon {
   color: #ededed;
   cursor: pointer;
   display: none;
   font-size: 3.6rem;
 }
-html body .header .logo {
+html body header .logo {
   font-size: 2.5rem;
   color: #ededed;
   font-weight: 600;
 }
-html body .header .navbar a {
+html body header .navbar a {
   color: #ededed;
   font-size: 1.5rem;
   font-weight: 500;
   margin-left: 3.5rem;
   transition: 0.3s;
 }
-html body .header .navbar a:hover,
-html body .header .navbar .active {
+html body header .navbar a:hover,
+html body header .navbar .active {
   color: #00abf0;
 }
 html body main .home {
@@ -183,14 +192,6 @@ html body main .about {
   padding-bottom: 6rem;
   padding: 7rem 9%;
 }
-html body main .about .heading {
-  font-size: 5rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-html body main .about .heading span {
-  color: #00abf0;
-}
 html body main .about .about-img {
   align-items: center;
   border-radius: 50%;
@@ -233,4 +234,79 @@ html body main .about .about-content .btns {
 }
 html body main .about .about-content .btns .btn::before {
   background-color: #112e42;
+}
+html body main .education {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: auto;
+  padding: 7rem 9%;
+}
+html body main .education .education-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+html body main .education .education-row .education-column {
+  flex: 1 1 40rem;
+}
+html body main .education .education-row .education-column .title {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
+}
+html body main .education .education-row .education-column .education-box {
+  border-left: 0.2rem solid #00abf0;
+}
+html body main .education .education-row .education-column .education-box .education-content {
+  padding-left: 2rem;
+  position: relative;
+}
+html body main .education .education-row .education-column .education-box .education-content::before {
+  background-color: #00abf0;
+  border-radius: 50%;
+  content: "";
+  height: 2rem;
+  left: -1.1rem;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+}
+html body main .education .education-row .education-column .education-box .education-content .content {
+  border-radius: 0.6rem;
+  border: 0.2rem solid #00abf0;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  position: relative;
+}
+html body main .education .education-row .education-column .education-box .education-content .content::before {
+  background-color: #112e42;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: -1;
+}
+html body main .education .education-row .education-column .education-box .education-content .content:hover::before {
+  width: 100%;
+}
+html body main .education .education-row .education-column .education-box .education-content .content .year {
+  color: #00abf0;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+html body main .education .education-row .education-column .education-box .education-content .content .year i {
+  padding-right: 0.5rem;
+}
+html body main .education .education-row .education-column .education-box .education-content .content h3 {
+  font-size: 2rem;
+}
+html body main .education .education-row .education-column .education-box .education-content .content p {
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
