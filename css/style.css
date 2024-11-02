@@ -488,4 +488,49 @@ html body main .contact form .focus {
   transition: 0.5s;
   width: 0;
   z-index: -1;
+}
+html body footer {
+  align-items: center;
+  background-color: #112e42;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+html body footer .footer-text p {
+  font-size: 1.6rem;
+}
+html body footer .footer-iconTop a {
+  align-items: center;
+  background-color: #00abf0;
+  border-radius: 0.4rem;
+  border: 0.2rem solid #00abf0;
+  display: inline-flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.8rem;
+  position: relative;
+  z-index: 1;
+}
+html body footer .footer-iconTop a::before {
+  background-color: #112e42;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 0;
+  z-index: -1;
+}
+html body footer .footer-iconTop a:hover::before {
+  width: 100%;
+}
+html body footer .footer-iconTop a:hover i {
+  color: #00abf0;
+}
+html body footer .footer-iconTop a i {
+  color: #081b29;
+  font-size: 2.4rem;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

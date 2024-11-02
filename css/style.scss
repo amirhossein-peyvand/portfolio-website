@@ -16,8 +16,7 @@ $text-color: #ededed;
   text-decoration: none;
 }
 
-// utility class
-
+// utility styles
 h3 {
   span {
     color: $main-color;
@@ -613,6 +612,64 @@ html {
             transition: 0.5s;
             width: 0;
             z-index: -1;
+          }
+        }
+      }
+    }
+
+    footer {
+      align-items: center;
+      background-color: $second-bg-color;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2rem 9%;
+
+      .footer-text {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+
+      .footer-iconTop {
+        a {
+          align-items: center;
+          background-color: $main-color;
+          border-radius: 0.4rem;
+          border: 0.2rem solid $main-color;
+          display: inline-flex;
+          justify-content: center;
+          overflow: hidden;
+          padding: 0.8rem;
+          position: relative;
+          z-index: 1;
+
+          &::before {
+            background-color: $second-bg-color;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: 0.5s;
+            width: 0;
+            z-index: -1;
+          }
+
+          &:hover::before {
+            width: 100%;
+          }
+
+          &:hover {
+            i {
+              color: $main-color;
+            }
+          }
+
+          i {
+            color: $bg-color;
+            font-size: 2.4rem;
+            transition: 0.5s;
           }
         }
       }
