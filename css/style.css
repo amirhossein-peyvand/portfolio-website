@@ -572,15 +572,38 @@ html body footer .footer-iconTop a i {
     transition-delay: 0.25s;
     transition: 0.25s ease;
     width: 100%;
+    z-index: 1;
+  }
+  .header .navbar .active-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #081b29;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: 0.25s ease;
+    transition-delay: 0s;
   }
   .header .navbar.active {
+    transition-delay: 0s;
     left: 0;
+  }
+  .header .navbar.active .active-nav {
+    transition-delay: 0.25s;
+  }
+  .header .navbar.active a {
+    transform: translateX(0);
     transition-delay: 0s;
   }
   .header .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
+    transform: translateX(-20rem);
+    transition: 0.25s ease;
+    transition-delay: 0s;
   }
   #menu-icon {
     display: block !important;
