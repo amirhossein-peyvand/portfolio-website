@@ -95,6 +95,10 @@ html body header {
   top: 0;
   width: 100%;
   z-index: 100;
+  transition: 0.3s;
+}
+html body header.sticky {
+  background-color: #081b29;
 }
 html body header #menu-icon {
   color: #ededed;

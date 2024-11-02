@@ -113,6 +113,11 @@ html {
       top: 0;
       width: 100%;
       z-index: 100;
+      transition: 0.3s;
+
+      &.sticky {
+        background-color: $bg-color;
+      }
 
       #menu-icon {
         color: $text-color;
