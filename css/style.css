@@ -608,4 +608,20 @@ html body footer .footer-iconTop a i {
   #menu-icon {
     display: block !important;
   }
+}
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 50%;
+  }
+  html main .home-content h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  html main .social-media {
+    width: 160px !important;
+  }
+  html main .social-media a {
+    width: 38px !important;
+    height: 38px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
