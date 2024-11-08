@@ -769,6 +769,16 @@ html {
   }
 }
 
+@media screen and (max-width: 530px) {
+  .footer {
+    flex-direction: column-reverse !important;
+    p {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+}
+
 @media screen and (max-width: 520px) {
   html {
     font-size: 50%;
@@ -788,6 +798,58 @@ html {
           width: 38px !important;
           height: 38px !important;
         }
+      }
+    }
+
+    .footer {
+      flex-direction: column-reverse !important;
+      p {
+        margin-top: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .home-content {
+    h1 {
+      font-size: 5.2rem !important;
+    }
+  }
+
+  .education {
+    padding: 10rem 4% 5rem 5%;
+  }
+
+  .contact {
+    form {
+      .input-box {
+        .input-field {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .home {
+    justify-content: center !important;
+    text-align: center !important;
+
+    .home-content {
+      align-items: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      text-align: center !important;
+
+      h1 {
+        font-size: 5rem !important;
+      }
+
+      .text-animate {
+        width: 100% !important;
       }
     }
   }

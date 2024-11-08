@@ -609,6 +609,15 @@ html body footer .footer-iconTop a i {
     display: block !important;
   }
 }
+@media screen and (max-width: 530px) {
+  .footer {
+    flex-direction: column-reverse !important;
+  }
+  .footer p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 520px) {
   html {
     font-size: 50%;
@@ -623,5 +632,41 @@ html body footer .footer-iconTop a i {
   html main .social-media a {
     width: 38px !important;
     height: 38px !important;
+  }
+  html .footer {
+    flex-direction: column-reverse !important;
+  }
+  html .footer p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 462px) {
+  .home-content h1 {
+    font-size: 5.2rem !important;
+  }
+  .education {
+    padding: 10rem 4% 5rem 5%;
+  }
+  .contact form .input-box .input-field {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 371px) {
+  .home {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .home .home-content {
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  .home .home-content h1 {
+    font-size: 5rem !important;
+  }
+  .home .home-content .text-animate {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */
