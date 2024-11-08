@@ -141,10 +141,29 @@ html body main .home .home-content .text-animate {
   width: 32.8rem;
 }
 html body main .home .home-content .text-animate h3 {
+  -webkit-background-clip: text;
   -webkit-text-stroke: 0.7px #00abf0;
+  animation-delay: 2s;
+  animation: homeBgText 6s linear infinite;
+  background-clip: te;
+  background-image: linear-gradient(#00abf0, #00abf0);
+  background-position: -33rem 0;
+  background-repeat: no-repeat;
   color: transparent;
   font-size: 3.1rem;
   font-weight: 700;
+}
+html body main .home .home-content .text-animate h3::before {
+  animation-delay: 2s;
+  animation: homeCursorText 6s linear infinite;
+  border-right: 2px solid #00abf0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: -1;
 }
 html body main .home .home-content p {
   font-size: 1.6rem;
@@ -214,6 +233,7 @@ html body main .about .about-img img {
   width: 100%;
 }
 html body main .about .about-img .circle-spin {
+  animation: aboutSpinner 8s linear infinite;
   border-bottom: 0.4rem solid #112e42;
   border-left: 0.4rem solid #00abf0;
   border-radius: 50%;
@@ -668,5 +688,30 @@ html body footer .footer-iconTop a i {
   }
   .home .home-content .text-animate {
     width: 100% !important;
+  }
+}
+@keyframes homeBgText {
+  0%, 10%, 100% {
+    background-position: -33rem 0;
+  }
+  65%, 85% {
+    background-position: 0 0;
+  }
+}
+@keyframes homeCursorText {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  65%, 78%, 85% {
+    width: 100%;
+    opacity: 1;
+  }
+  75%, 81% {
+    opacity: 1;
+  }
+}
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }/*# sourceMappingURL=style.css.map */

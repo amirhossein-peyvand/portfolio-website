@@ -170,10 +170,30 @@ html {
             width: 32.8rem;
 
             h3 {
+              -webkit-background-clip: text;
               -webkit-text-stroke: 0.7px $main-color;
+              animation-delay: 2s;
+              animation: homeBgText 6s linear infinite;
+              background-clip: te;
+              background-image: linear-gradient($main-color, $main-color);
+              background-position: -33rem 0;
+              background-repeat: no-repeat;
               color: transparent;
               font-size: 3.1rem;
               font-weight: 700;
+
+              &::before {
+                animation-delay: 2s;
+                animation: homeCursorText 6s linear infinite;
+                border-right: 2px solid $main-color;
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 0;
+                z-index: -1;
+              }
             }
           }
 
@@ -256,6 +276,7 @@ html {
           }
 
           .circle-spin {
+            animation: aboutSpinner 8s linear infinite;
             border-bottom: 0.4rem solid $second-bg-color;
             border-left: 0.4rem solid $main-color;
             border-radius: 50%;
@@ -852,5 +873,45 @@ html {
         width: 100% !important;
       }
     }
+  }
+}
+
+// keyframes animation
+@keyframes homeBgText {
+  0%,
+  10%,
+  100% {
+    background-position: -33rem 0;
+  }
+
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes homeCursorText {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  65%,
+  78%,
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  75%,
+  81% {
+    opacity: 1;
+  }
+}
+
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
